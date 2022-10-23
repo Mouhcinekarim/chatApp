@@ -1,0 +1,5 @@
+<form action="">
+  <input name="email" type="email" #email>
+  <input name="password" type="password" #password>
+  <input type="submit" (click)="onRegister(email.value, password.value)">
+</form>
