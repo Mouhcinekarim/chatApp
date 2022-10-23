@@ -7,17 +7,17 @@ import { from, Observable } from 'rxjs';
 })
 export class AuthService {
 
-  constructor(private firebaseautho:AngularFireAuth) { }
+  constructor(private firebaseauth: AngularFireAuth) { }
 
-  async login(email:string,password:string){
-    
-    await this.firebaseautho.signInWithEmailAndPassword(email,password).then(res=>{
-     
+  async login(email: string, password: string){
+
+    await this.firebaseauth.signInWithEmailAndPassword(email,password).then(res=>{
+      console.log(res);
     }).catch(res=>{alert(res)})
   }
 
   async register(email: string, password: string){
-    await this.firebaseautho.signInWithEmailAndPassword(email,password).then(
+    await this.firebaseauth.createUserWithEmailAndPassword(email, password).then(
       res => console.log(res)
     );
   }

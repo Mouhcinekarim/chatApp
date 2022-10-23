@@ -5,14 +5,9 @@
 export const environment = {
   production: false,
    firebaseConfig : {
-    apiKey: "AIzaSyDGBKzkdjE1Mnm9kfuBPTQRAEXNP0o7tqU",
-    authDomain: "chat-app-open-source.firebaseapp.com",
-    projectId: "chat-app-open-source",
-    storageBucket: "chat-app-open-source.appspot.com",
-    messagingSenderId: "879853908689",
-    appId: "1:879853908689:web:16a8e3a1d56679b5260bf0"
+    // config here
   }
-  
+
 };
 
 /*
